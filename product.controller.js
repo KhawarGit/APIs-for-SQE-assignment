@@ -22,8 +22,27 @@ const getProductById = (req, res) => {
     }
 }
 
+
+const postAddProduct = (req, res) => {
+    const { id, name, description, price } = req.body;
+    if(!(id&&name&&description&&price)){
+        res.status(400).json({
+            message: "Not enough data provided, provide all fields."
+        });
+    } else{
+        productData.push({
+            "id": id,
+            "name": name,
+            "description": description,
+            "price": price
+        });
+        
+        res.status(201).end();
+    }
+};
+
 module.exports = {
     getAllProducts,
     getProductById,
-
+    postAddProduct
 }
