@@ -4,6 +4,7 @@
   "description": "writing apis for testing assignment of sqe using two open source testing tools such as , Postman , Katalon , etc",
   "main": "index.js",
   "scripts": {
+    "server": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
