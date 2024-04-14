@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Police Toy Car",
+        "description": "A police toy car is a miniature replica of a law enforcement vehicle, typically equipped with lights, sirens, and other realistic details, allowing children to role-play scenarios of law enforcement and emergency response.",
+        "price": "$2.5"
+    },
+    {
+        "id": 2,
+        "name": "Die cast Mustang",
+        "description": "A diecast Mustang is a scaled-down, collectible model of a Ford Mustang, meticulously crafted from metal using the diecasting method, featuring intricate details and realistic paint finishes, ideal for enthusiasts and collectors of automotive memorabilia.",
+        "price": "10$"
+    },
+    {
+        "id": 3,
+        "name": "Doll Set",
+        "description": "A doll set is a collection of miniature figures, typically representing characters from various themes such as fantasy, fashion, or everyday life, often including accessories and clothing for imaginative play and storytelling.",
+        "price": "5$"
+    }
+]
