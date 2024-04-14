@@ -4,7 +4,7 @@ const getAllProducts = (req, res) => {
     res.send(productData);
 };
 
-export {
+module.exports = {
     getAllProducts,
     
 }
