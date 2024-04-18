@@ -1,8 +1,9 @@
 const productData = require('./product.data.json');
-
+// to get all products from products.data.json
 const getAllProducts = (req, res) => {
     res.send(productData);
 };
+//to get the product by id
 const getProductById = (req, res) => {
     if(!(Number.isInteger(parseInt(req.params.id)))){
         res.status(400).json({
@@ -22,7 +23,7 @@ const getProductById = (req, res) => {
     }
 }
 
-
+// to add a product in product.data.json
 const postAddProduct = (req, res) => {
     const { id, name, description, price } = req.body;
     if(!(id&&name&&description&&price)){
