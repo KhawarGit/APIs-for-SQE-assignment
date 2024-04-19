@@ -21,7 +21,7 @@ const getProductById = (req, res) => {
             });
         };
     }
-}
+};
 
 // to add a product in product.data.json
 const postAddProduct = (req, res) => {
