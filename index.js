@@ -4,9 +4,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser')
 app.use(cors());
 app.use(bodyParser.json());
-const prodRouter = require('./product.router.js');
-app.use("/product", prodRouter);
 
+//Router middleware
+const prodRouter = require('./product.router.js');
+//configuring product (router) middleware. 
+app.use("/product", prodRouter);
+//app listen on port: 8000
 app.listen(8000, () => {
     console.log("App running on port : http://localhost:8000");
 });
