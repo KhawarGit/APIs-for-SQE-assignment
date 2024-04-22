@@ -42,6 +42,7 @@ const postAddProduct = (req, res) => {
     }
 };
 
+//exporting the controllers.
 module.exports = {
     getAllProducts,
     getProductById,
