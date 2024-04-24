@@ -6,4 +6,5 @@ Router.get("/all", getAllProducts);
 Router.get("/:id", getProductById);
 //POST http://localhost:8000/product/add
 Router.post("/add", postAddProduct);
+//exporting this router
 module.exports = Router;
