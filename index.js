@@ -3,8 +3,8 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 //configuring third party middlewares
-app.use(cors());
-app.use(bodyParser.json());
+app.use(cors()); // Cross-Origin Resource Sharing
+app.use(bodyParser.json()); // for working with request bodies.
 
 //Router middleware
 const prodRouter = require('./product.router.js');
