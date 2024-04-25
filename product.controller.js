@@ -31,6 +31,7 @@ const postAddProduct = (req, res) => {
             message: "Not enough data provided, provide all fields."
         });
     } else{
+        //pushing the new product in product.data.json file.
         productData.push({
             "id": id,
             "name": name,
