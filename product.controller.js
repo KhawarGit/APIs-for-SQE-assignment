@@ -38,7 +38,7 @@ const postAddProduct = (req, res) => {
             "description": description,
             "price": price
         });
-        
+        //sending response of a POST request with empty body.
         res.status(201).end();
     }
 };
