@@ -27,6 +27,7 @@ const getProductById = (req, res) => {
 const postAddProduct = (req, res) => {
     const { id, name, description, price } = req.body;
     if(!(id&&name&&description&&price)){
+        //if any one of the required fields are not present then sending the response back to user.
         res.status(400).json({
             message: "Not enough data provided, provide all fields."
         });
