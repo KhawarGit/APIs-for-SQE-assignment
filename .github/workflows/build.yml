@@ -9,7 +9,7 @@ jobs:
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
-    if: github.event_name != 'push'  # Skip this job if triggered by a push event
+    # if: github.event_name != 'push'  # Skip this job if triggered by a push event
     steps:
       - uses: actions/checkout@v3
         with:
