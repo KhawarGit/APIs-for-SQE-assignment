@@ -25,7 +25,8 @@ const getProductById = (req, res) => {
 
 // to add a product in product.data.json
 const postAddProduct = (req, res) => {
-    const { id, name, description, price } = req.body;
+    //destructuring request body.
+    const { id, name, description, price } = req.body; //object destructuring.
     if(!(id&&name&&description&&price)){
         //if any one of the required fields are not present then sending the response back to user.
         res.status(400).json({
