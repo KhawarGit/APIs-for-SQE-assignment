@@ -1,4 +1,4 @@
-const Router = require('express').Router()
+const Router = require('express').Router() // creating a router middleware.
 const { getAllProducts, getProductById, postAddProduct } = require('./product.controller.js');
 //GET http://localhost:8000/product/all
 Router.get("/all", getAllProducts);
