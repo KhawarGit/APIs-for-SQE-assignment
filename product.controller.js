@@ -6,6 +6,7 @@ const getAllProducts = (req, res) => {
 //to get the product by id
 const getProductById = (req, res) => {
     if(!(Number.isInteger(parseInt(req.params.id)))){
+        //sending response for a bad request since the a non-numeric id is provided.
         res.status(400).json({
             message: "Id of the required product is not provided or is not integer."
         });
